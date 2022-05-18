@@ -21,4 +21,4 @@ jobs:
           docker pull mixeway/scanner:latest
       - name: Run Scan
         run: |
-          docker run -e OSS_USERNAME=$OSS_USERNAME -e OSS_KEY=$OSS_KEY -e MIXEWAY_URL=https://hub.mixeway.io -e MIXEWAY_KEY=$MIXEWAY_KEY -e MIXEWAY_PROJECT_ID=$ MIXEWAY_PROJECT_ID -e MODE=STANDALONE -e MIXEWAY_PROJECT_NAME=S01132993_lab_secure_app -e COMMIT_ID=test -e BRANCH=master -v /opt/lab_sec_audit/sast:/opt/sources mixeway/scanner:latest
+          docker run -e OSS_USERNAME=$OSS_USERNAME -e OSS_KEY=$OSS_KEY -e MIXEWAY_URL=https://hub.mixeway.io -e MIXEWAY_KEY=$MIXEWAY_KEY -e MIXEWAY_PROJECT_ID=$ MIXEWAY_PROJECT_ID -e MODE=STANDALONE -e MIXEWAY_PROJECT_NAME="S01132993_lab_secure_app" -e COMMIT_ID=test -e BRANCH=master -v /opt/lab_sec_audit/sast:/opt/sources mixeway/scanner:latest
